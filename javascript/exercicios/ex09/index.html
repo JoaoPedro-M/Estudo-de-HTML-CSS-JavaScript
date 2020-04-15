@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body { font: 12pt Arial;}
+        button { font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick='clicar()'>Clique em mim</button>
+    <button onclick='zerar()'>Zerar o contador</button>
+    <section id='res'>
+        <p>
+            O contador está com <mark>0</mark> cliques.
+        </p>
+    </section>
+
+    <script>
+        n = 0
+        function tela() {
+            let lb = window.document.getElementById('res')
+            lb.innerHTML = `<p>O contador está com <mark>${n}</mark> cliques</p>`
+        }
+        function clicar(){
+            n += 1
+            tela()
+        }
+        function zerar(){
+            n = 0
+            tela()
+        }
+    </script>
+</body>
+</html>
