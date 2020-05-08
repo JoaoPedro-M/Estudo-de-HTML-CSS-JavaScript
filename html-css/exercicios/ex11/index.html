@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas (pictures)</h1>
+    <p>Veja que a imagem se adpta ao tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/bicicleta.png" types="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/carro.png" type="image/png">
+        <img src="imagens/caminhao.png" alt="">
+    </picture>
+    <p>Você está vendo um caminhão, um carro ou uma bicicleta?</p>
+    <p>Experimente aumentar e diminuir o tamanho do seu navegador 🤯</p>
+    <h1>Áudio</h1> 
+    <audio src="midia/guanacast-33.mp3" controls loop></audio>
+</body>
+</html>
